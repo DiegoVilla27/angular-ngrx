@@ -1,0 +1,29 @@
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  li {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #8b5cf6;
+    color: #8b5cf6;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.active {
+  background-color: #8b5cf6 !important;
+  color: white !important;
+}
+
+div {
+  margin-top: 20px;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: white;
+}

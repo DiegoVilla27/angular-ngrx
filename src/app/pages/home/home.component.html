@@ -1,0 +1,21 @@
+<div class='home'>
+  <h1>Counter<br/>{{ counter }}</h1>
+  <div>
+    <button
+      type="button"
+      (click)="increment()"
+    >
+      Increment
+      <br/>
+      <small>(Action without props)</small>
+    </button>
+    <button
+      type="button"
+      (click)="decrement()"
+    >
+      Decrement
+      <br/>
+      <small>(Action with props)</small>
+    </button>
+  </div>
+</div>

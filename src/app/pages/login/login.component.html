@@ -1,0 +1,36 @@
+<div class="login">
+  <h1>Login</h1>
+  <form
+    [formGroup]="form"
+    autocomplete="off"
+  >
+    <input
+      type="email"
+      formControlName="email"
+      placeholder="Email"
+    />
+    <input
+      type="password"
+      formControlName="password"
+      placeholder="Password"
+    />
+
+    <button
+      type="submit"
+      (click)="submit()"
+      [disabled]="loading"
+      [ngStyle]="{ 'opacity': loading ? '0.5' : '1' }"
+    >
+      Login
+    </button>
+  </form>
+  <pre *ngIf="user">
+    <code>
+      <small>USER:</small>{{ user | json }}
+    </code>
+  </pre>
+</div>
+
+<div class="spinner-overlay" *ngIf="loading">
+  <div class="spinner"></div>
+</div>

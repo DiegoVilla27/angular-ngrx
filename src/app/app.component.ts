@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from "@angular/core";
+import { RouterModule, RouterOutlet } from "@angular/router";
 
 @Component({
-  selector: 'ngrx-root',
+  selector: "ngrx-root",
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [RouterModule, RouterOutlet],
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.scss"
 })
 export class AppComponent {
-  title = 'angular-ngrx';
+  title = "angular-ngrx";
 }
